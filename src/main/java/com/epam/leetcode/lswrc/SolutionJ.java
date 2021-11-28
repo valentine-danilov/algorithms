@@ -30,10 +30,4 @@ public class SolutionJ {
         }
         return maxLength;
     }
-
-    public static void main(String[] args) {
-        SolutionJ solutionJ = new SolutionJ();
-        System.out.println(solutionJ.lengthOfLongestSubstringV2("bbbbb"));
-    }
-
 }

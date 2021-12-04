@@ -1,4 +1,4 @@
-package com.epam.leetcode.longestsubstring;
+package by.danilau.leetcode.longestsubstring;
 
 import java.util.HashMap;
 import java.util.Map;

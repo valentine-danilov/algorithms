@@ -1,14 +1,13 @@
-package com.epam.leetcode.mergeksortedlists;
+package by.danilau.leetcode.mergeksortedlists;
 
-import com.epam.leetcode.common.ListNode;
+import by.danilau.leetcode.common.TestUtils;
+import by.danilau.leetcode.common.ListNode;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
-
-import static com.epam.leetcode.common.TestUtils.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 class MergeKSortedListsSolutionTest {
 
@@ -31,7 +30,7 @@ class MergeKSortedListsSolutionTest {
     @MethodSource("testCases")
     void test(ListNode[] input, ListNode expected) {
         ListNode actual = solutionJ.mergeKLists(input);
-        assertEquals(linkedListToString(expected), linkedListToString(actual));
+        Assertions.assertEquals(TestUtils.linkedListToString(expected), TestUtils.linkedListToString(actual));
     }
 
     static ListNode buildLinkedList(Integer... values) {

@@ -1,8 +1,6 @@
-package com.epam.leetcode.addtwonumbers;
+package by.danilau.leetcode.addtwonumbers;
 
-import com.epam.leetcode.common.ListNode;
-
-import java.util.List;
+import by.danilau.leetcode.common.ListNode;
 
 public class AddTwoNumberSolution {
 

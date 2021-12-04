@@ -1,4 +1,4 @@
-package com.epam.leetcode.common;
+package by.danilau.leetcode.common;
 
 import org.junit.jupiter.api.Assertions;
 

@@ -1,4 +1,4 @@
-package com.epam.leetcode.common;
+package by.danilau.leetcode.common;
 
 public class ListNode {
     public int val;

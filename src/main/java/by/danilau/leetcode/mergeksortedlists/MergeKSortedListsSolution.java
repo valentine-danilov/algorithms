@@ -1,11 +1,9 @@
-package com.epam.leetcode.mergeksortedlists;
+package by.danilau.leetcode.mergeksortedlists;
 
-import com.epam.leetcode.common.ListNode;
+import by.danilau.leetcode.common.ListNode;
 
-import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
-import java.util.TreeSet;
 
 public class MergeKSortedListsSolution {
 

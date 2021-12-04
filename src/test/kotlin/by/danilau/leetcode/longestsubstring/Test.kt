@@ -1,4 +1,4 @@
-package com.epam.leetcode.longestsubstring
+package by.danilau.leetcode.longestsubstring
 
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.params.ParameterizedTest

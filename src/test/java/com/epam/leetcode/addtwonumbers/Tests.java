@@ -1,15 +1,18 @@
 package com.epam.leetcode.addtwonumbers;
 
-import org.junit.jupiter.api.Assertions;
+import com.epam.leetcode.common.ListNode;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
+import static com.epam.leetcode.common.TestUtils.assertEquals;
+import static com.epam.leetcode.common.TestUtils.integerToLinkedList;
+
 public class Tests {
 
-    SolutionJ solution = new SolutionJ();
+    AddTwoNumberSolution solution = new AddTwoNumberSolution();
 
     static Stream<Arguments> testCases() {
         return Stream.of(
@@ -30,41 +33,4 @@ public class Tests {
         ListNode actual = solution.addTwoNumbers(left, right);
         assertEquals(expected, actual);
     }
-
-    void assertEquals(ListNode expected, ListNode actual) {
-        String expectedAsString = linkedListToInteger(expected);
-        String actualAsString = linkedListToInteger(actual);
-
-        Assertions.assertEquals(expectedAsString, actualAsString);
-    }
-
-    static ListNode integerToLinkedList(int value) {
-        ListNode root = null;
-        ListNode lastNode = null;
-        int remaining = value;
-        while (remaining > 0) {
-            int nodeValue = remaining % 10;
-            remaining /= 10;
-            if (root == null) {
-                root = new ListNode(nodeValue, null);
-                lastNode = root;
-            } else {
-                lastNode.next = new ListNode(nodeValue, null);
-                lastNode = lastNode.next;
-            }
-        }
-        return root;
-    }
-
-    static String linkedListToInteger(ListNode node) {
-        StringBuilder intValueAsString = new StringBuilder();
-        ListNode lastNode = node;
-        while (lastNode.next != null) {
-            intValueAsString.append(lastNode.val);
-            lastNode = lastNode.next;
-        }
-        intValueAsString.append(lastNode.val);
-        return intValueAsString.reverse().toString();
-    }
-
 }

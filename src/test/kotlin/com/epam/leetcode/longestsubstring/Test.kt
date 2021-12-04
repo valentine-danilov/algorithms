@@ -1,4 +1,4 @@
-package com.epam.leetcode.lswrc
+package com.epam.leetcode.longestsubstring
 
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.params.ParameterizedTest
@@ -19,7 +19,7 @@ class Test {
         ],
     )
     fun test(input: String, expected: Int) {
-        val s = SolutionJ()
+        val s = LongestSubstringSolution()
         Assertions.assertEquals(expected, s.lengthOfLongestSubstringV2(input))
     }
 

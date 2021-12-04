@@ -1,9 +1,9 @@
-package com.epam.leetcode.lswrc;
+package com.epam.leetcode.longestsubstring;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class SolutionJ {
+public class LongestSubstringSolution {
 
     public Integer lengthOfLongestSubstringV2(String s) {
         int maxLength = 0;
